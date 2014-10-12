@@ -27,7 +27,7 @@
           function(data){ //show a nicely designed error message box
             bootbox.dialog({
               message: data,
-                title: 'Konnte keine Daten von ' + vm.currentServerUrl + ' empfangen.',
+                title: 'Could not get any data from ' + vm.currentServerUrl,
                 buttons: {
                   main: {
                     label: "OK",
