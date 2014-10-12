@@ -8,7 +8,7 @@ There are many excellent books & tutorials, of course.
 But sometimes I just want to take an unknown piece of code, read some initial 
 info and simply run it. 
 
-So, here's it: Take any piece of code, run it, read comments, run it again. 
+So, here's it: Take any piece of code, run it, read comments,...and run it again. 
 
 And, please, question everything! Don't trust my code and/or comments. 
 
