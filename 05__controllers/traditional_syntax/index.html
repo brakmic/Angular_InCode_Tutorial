@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+</head>
+<body>
+<!-- no automatically instantiated variable, just a controller and the $scope that
+provides access to controllers public members. The problem with this notation is when there are
+many controllers inside HTML. Because there's no dot-notation to cleanly separate members of one controller
+from those of others. Also, accessing members of parent controllers enforces the usage of $parent object
+that can get very messy when used over many levels, like $parent.$parent. -->
+<div data-ng-controller="TraditionalCtrl">
+    <table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr data-ng-repeat="c in companies">
+            <td>{{ c.id }}</td>
+            <td>{{ c.name }}</td>
+            <td><a data-ng-href="http://{{ c.url }}" target="_blank">{{ c.name }}</a></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</body>
+<script src="../../scripts/angular.js"></script>
+<script src="advarics_module.js"></script>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css">
+</head>
+<body>
+<!-- Angular automatically creatss an instance of the controller and binds it to the variable.
+ In this case it's the variable "vm"
+ From now on, each variable, object or method inside this controller is accessible via vm.* notation -->
+<div data-ng-controller="ControllerAsCtrl as vm">
+    <table> <!-- we create a simple table with three headers for ID, Name and URL -->
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+    <!-- we loop over the elements of the array -->
+        <tr data-ng-repeat="c in vm.companies"> <!-- we create a new row for each element from the array -->
+            <td>{{ c.id }}</td>
+            <td>{{ c.name }}</td>
+            <td><a data-ng-href="http://{{ c.url }}" target="_blank">{{ c.name }}</a></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</body>
+<script src="../../scripts/angular.js"></script>
+<script src="advarics_module.js"></script>
+<script src="app.js"></script>
+</html>

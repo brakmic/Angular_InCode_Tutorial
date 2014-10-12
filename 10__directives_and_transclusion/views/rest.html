@@ -1,0 +1,16 @@
+<div class="jumbotron">
+    <!-- because we define the controller in our routing table there's no need to put the same definition in this html view -->
+    <label for="api">API</label>
+    <input id="api" type="text" data-ng-model="vm.type" placeholder="Name, e.g. Persons"/>
+    <a class="btn btn-primary btn-sm" role="button" data-ng-click="vm.getData()">Get Data</a>
+    <!-- put the whole REST bunch into this text area -->
+
+        <div class="form-group">
+            <label for="comment">JSON Data</label>
+            <textarea data-ng-bind="vm.result" class="form-control" rows="5" id="comment"></textarea>
+
+        </div>
+    <div class="form-group">
+        <a data-ng-href="table" data-ng-show="vm.dataReceived === true">Show in Grid</a>
+    </div>
+</div>

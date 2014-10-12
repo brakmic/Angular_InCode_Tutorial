@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+<body>
+<div data-ng-controller="AdvaricsCtrl as vm">
+    <table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+    <!-- We expect from the controller an array of entries that'll use to dynamically generate table rows. -->
+        <tr data-ng-repeat="c in vm.companies">
+            <td>{{ c.id }}</td>
+            <td>{{ c.name }}</td>
+            <td><a data-ng-href="http://{{ c.url }}" target="_blank">{{ c.name }}</a></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+<script src="../scripts/angular.js"></script>
+<script src="advarics_module.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

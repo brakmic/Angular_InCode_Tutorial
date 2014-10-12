@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/ng-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css"/>
+
+</head>
+<body data-ng-controller="MainCtrl as vm">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.advarics.net">Advarics</a>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="panel">
+    <!--- Here we'll switch our views -->
+<div ng-view></div>
+</div>
+
+
+<script src="../scripts/jquery-2.1.1.min.js"></script>
+<script src="../scripts/jquery-ui-1.9.1.custom.min.js"></script>
+<script src="../scripts/underscore-min.js"></script>
+<script src="../scripts/bootstrap.min.js"></script>
+<script src="../scripts/angular.js"></script>
+<script src="../scripts/angular-route.js"></script>
+<script src="../scripts/ng-grid-2.0.1.min.js"></script>
+<script src="../scripts/bootbox.min.js"></script>
+
+<script src="app.js"></script>
+<script src="controllers/advarics_controllers.js"></script>
+<script src="services/advarics_services.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+</head>
+<body>
+<div data-ng-controller="AdvaricsCtrl as main">
+<label for="value-x">Value X: </label>
+<input id="value-x" type="number" data-ng-model="main.x"/>
+<label for="value-y">Value Y: </label>
+<input id="value-y" type="number" data-ng-model="main.y"/>
+<input type="button" value="Calculate +" data-ng-click="main.calculate()"/>
+<br/>
+Result: <span data-ng-bind="main.result"></span>
+</div>
+<script src="../scripts/angular.js"></script>
+<script src="app.js"></script>
+<script src="advarics_module.js"></script>
+</body>
+</html>

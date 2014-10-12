@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+</head>
+<body>
+<!-- Here we create a controller by using the newer "controllerAs" syntax.
+This syntax commands Angular to create an instance of the controller and bind it to
+a variable which we give some meaningful name. In this example we say that our controller is "vm".
+From now on, every variable, function or object we'd like to use from our controller can only be
+accessed via vm.* -->
+<div data-ng-controller="AdvaricsCtrl as main">
+<!-- Here we use one-way data binding via ng-bind to show the current state of the variable "theAnswer" -->
+Nachricht vom eingebundenen Modul: <div data-ng-bind="main.theAnswer"></div>
+</div>
+<script src="../scripts/angular.js"></script>
+
+<script src="app.js"></script>
+<script src="advarics_module.js"></script>
+</body>
+</html>

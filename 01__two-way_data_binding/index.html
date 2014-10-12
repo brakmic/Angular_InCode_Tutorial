@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- this is the directive that binds Angular to some part of our web-page (or the web page as a whole).
+Theoreticsally one can use any part of the web page to bind the angular runtime to but, please, avoid
+the "head" area. It simply makes no sense to bind angular to the invisible part of your web page.
+ If unsure, just use <html> to bind to. -->
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+</head>
+<body>
+  <!-- Two-Way Data Binding
+
+Bind a model via data-ng-model directive (or just "ng-model", if you don't care about W3C conformity).
+Any changes to this model get reflected in the expression {{ name}}
+
+There's another way to bind a piece of HTML with a variable that prevents "flickering"
+of "{{ }}" when the data is not available: "ng-bind"
+
+-->
+<div>
+Type in some data and enjoy Angular's two-way data binding for free.
+</div>
+<br/>
+<label for="name-in">Name: </label>
+<input id="name-in" data-ng-model="name"></input>
+<br/>
+<br/>
+Output: <h2 id="name-out">{{ name }}</h2>
+<script src="../scripts/angular.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

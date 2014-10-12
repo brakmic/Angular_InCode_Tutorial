@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title></title>
+</head>
+<body>
+<div data-ng-controller="AdvaricsCtrl as main">
+    <ul>
+    <!-- Here we're using a new directive, ng-repeat, that will hepl us dynamically create some html parts.
+     In this case we're expanding the list that shows the data from our controller's array. We're not only
+     controlling the creation of new LI-tags but also their internal state (the hrefs). With Angular
+     you can manipulate all elements of a web-page because Angular treats HTML as its "template engine".
+     That's why you don't have a separate template engine like Mustache, Handlebars etc.
+     HTML is your template engine and not only you can modify the existing one but also you can
+     dynamically load parts from other files or from predefined <script>-Areas. -->
+        <li data-ng-repeat="store in main.stores">
+           <a data-ng-href="http://{{ store.url }}" target="_blank"> {{ store.name }} </a>
+        </li>
+    </ul>
+</div>
+<script src="../scripts/angular.js"></script>
+<script src="advarics_module.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

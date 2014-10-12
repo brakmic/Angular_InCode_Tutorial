@@ -1,0 +1,13 @@
+table {
+    width:50%;
+}
+td {
+    border:1px solid #000;
+    vertical-align:top;
+    overflow:hidden;
+}
+
+.mini-image {
+    width:100px;
+    height: 100px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <title>AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+<body data-ng-controller="AdvaricsCtrl as vm">
+<!-- a simple navbar based on Bootstrap -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.advarics.net">Advarics</a>
+    </div>
+
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="jumbotron">
+    <label for="api">API</label>
+    <input id="api" type="text" data-ng-model="vm.type" placeholder="Name, e.g. Persons"/>
+    <a class="btn btn-primary btn-sm" role="button" data-ng-click="vm.getData(vm.type)">Get Data</a>
+    <!-- Map received data -->
+    <div class="panel panel-default">
+      <div class="panel-body">
+       <textarea data-ng-bind="vm.result"></textarea>
+      </div>
+    </div>
+</div>
+<script src="../scripts/jquery-2.1.1.min.js"></script>
+<script src="../scripts/bootstrap.min.js"></script>
+<script src="../scripts/angular.js"></script>
+<!-- a little library for showing nicely designed message boxes -->
+<script src="../scripts/bootbox.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
