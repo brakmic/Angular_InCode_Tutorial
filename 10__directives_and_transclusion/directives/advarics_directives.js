@@ -61,12 +61,27 @@
             link: linker, //we reference the above linker method
             scope: false, //do we need a scope from our current/parent context? A directive can either inherit a scope via
                           //JS-prototype chain or get a completely new scope that is now in the prototype chain.
+                          // There's also the option to create a so-called "isolate scope" that will contain only certain
+                          //elements from the parent scope. An isolate scope gets created by using "scope: {}".
             controller: function(){}, //a directive can also have it's own controller
             controllerAs: 'vm'        //and the same controllerAs syntax is possible too
         }
     }
 
     //this directive has the ability to "transclude" already existing contents/elements and inject them into itself
+    //Transclusion is an advanced concept of Angular because it allows some kind of "closures" on the declarative (HTML)
+    //level. Just like closures inside JavaScript make possible that inner function retain values of outer function even
+    //after they return their own values transclusions allow the same for elements which are lovated inside other elements.
+    //For example:
+    //
+    //<outer-element ng-controller="OuterCtrl as vm">
+    // <div ng-bind="{{ vm.value1 }}"></div>
+    // <div ng-bind="{{ vm.value2 }}"></div>
+    // <div ng-bind="{{ vm.value3 }}"></div>
+    //
+    // <inner-element ng-transclude></inner-element> <<--- THIS element will have access to outer-element's controller and
+    //                                                      its properties (value1, value2 etc.) during the HTML-compilation
+    // </outer-element>
     function RotateTansclude(){
         var linker = function($scope, $element, $attrs){
             var moveRight = function(){
@@ -84,7 +99,7 @@
             ].join(''),
             link: linker,
             scope: true,
-            transclude: true //we activate transclusion
+            transclude: true //we activate transclusion, that is: we keep access to any elements/properties from our parent elements
         }
     }
 
