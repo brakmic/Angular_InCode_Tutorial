@@ -14,14 +14,12 @@ So, here's it: Take any piece of code, open it in your preferred browser, and re
 *And, please, question everything! Don't trust my code and/or comments.* 
 
 ###Why this collection?
-
 This set of code examples is a result of two days of coding at home. I wanted to deliver a few examples of Angular's features 
 to make the internal evaluations in my company [ ![Advarics ](http://t58.imgup.net/advarics_le9f7.png "Advarics GmbH") ](http://www.advarics.net "Advarics GmbH") 
 more realistic.
 
 
 ###Warning
-
 But, beware: I'm not an Angular.js developer. I prefer Backbone.js / Marionette.js. 
 
 Nevertheless, there's no reason to reject any kind of knowledge. You never know ;) 
@@ -31,7 +29,6 @@ I hope these examples will be of some value for you, dear visitor.
 If you find any error in code/comments, please, let me know. I'm sure there'll be many of them.
 
 ###Recommendations
-
 <a href="https://leanpub.com/web-component-development-with-angularjs" target="_blank">Web Component Architecture & Development with AngularJS</a> by David Shapiro 
 
 Todd Motto's <a href="http://www.airpair.com/angularjs" target="_blank">Ultimate AngularJS Tutorial</a> 
@@ -39,6 +36,4 @@ Todd Motto's <a href="http://www.airpair.com/angularjs" target="_blank">Ultimate
 John Papa's <a href="https://github.com/johnpapa/angularjs-styleguide" target="_blank">AngularJS Style Guide</a>.
 
 ####License
-=======
-
 MIT
