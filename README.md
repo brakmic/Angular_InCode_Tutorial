@@ -1,6 +1,7 @@
 #Angular In-Code Tutorial
 
 **Learn Angular.js by reading code and comments!** 
+
 *No switching between lengthy docs and code examples.*
 
 There are many excellent books & tutorials, of course. 
