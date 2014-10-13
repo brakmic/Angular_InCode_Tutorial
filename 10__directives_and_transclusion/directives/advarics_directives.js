@@ -74,14 +74,18 @@
     //after they return their own values transclusions allow the same for elements which are located inside other elements.
     //For example:
     //
-    //<outer-element ng-controller="OuterCtrl as vm">
-    // <div ng-bind="{{ vm.value1 }}"></div>
+    //<outer-element ng-controller="OuterCtrl as vm">   --> this controller exposes properties: value1, value2 & value3
+    //
+    //
+    // <inner-element ng-transclude>
+    //
+    // <div ng-bind="{{ vm.value1 }}"></div>   --> these bindings will get their data from the <outer-element>'s controller
     // <div ng-bind="{{ vm.value2 }}"></div>
     // <div ng-bind="{{ vm.value3 }}"></div>
     //
-    // <inner-element ng-transclude></inner-element> <<--- THIS element will have access to outer-element's controller,
-    //                                                      elements markup and all available properties (value1, value2 etc.)
-    //                                                      during the HTML-compilation
+    // </inner-element> <<--- During the HTML-compilation this element has access to outer-element's controller & its properties,
+    //                                                      the elements markup and the $scope object
+    //
     // </outer-element>
     function RotateTansclude(){
         var linker = function($scope, $element, $attrs){
