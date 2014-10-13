@@ -31,11 +31,11 @@ If you find any error in code/comments, please, let me know. I'm sure there'll b
 
 ###Recommendations
 
-I'd recommend this eBook to learn Angular.js thoroughly: [Web Component Architecture & Development with AngularJS](https://leanpub.com/web-component-development-with-angularjs) by David Shapiro 
+I'd recommend this eBook to learn Angular.js thoroughly:        <a href="https://leanpub.com/web-component-development-with-angularjs" target="_blank">Web Component Architecture & Development with AngularJS</a> by David Shapiro 
 
-Also a very good and densely packed tutorial about Angular.js: [Todd Motto's Ultimate AngularJS Tutorial](http://www.airpair.com/angularjs) 
+Also a very good and densely packed tutorial about Angular.js:  <a href="http://www.airpair.com/angularjs" target="_blank">Todd Motto's Ultimate AngularJS Tutorial</a> 
 
-Regarding coding guidelines I recommend [John Papa's Style Guide](https://github.com/johnpapa/angularjs-styleguide).
+Regarding coding guidelines I recommend                         <a href="https://github.com/johnpapa/angularjs-styleguide" target="_blank">John Papa's Style Guide</a>.
 
 ####License
 =======
