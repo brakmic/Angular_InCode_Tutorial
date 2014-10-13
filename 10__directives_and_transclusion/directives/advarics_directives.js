@@ -71,7 +71,7 @@
     //this directive has the ability to "transclude" already existing contents/elements and inject them into itself
     //Transclusion is an advanced concept of Angular because it allows some kind of "closures" on the declarative (HTML)
     //level. Just like closures inside JavaScript make possible that inner function retain values of outer function even
-    //after they return their own values transclusions allow the same for elements which are lovated inside other elements.
+    //after they return their own values transclusions allow the same for elements which are located inside other elements.
     //For example:
     //
     //<outer-element ng-controller="OuterCtrl as vm">
