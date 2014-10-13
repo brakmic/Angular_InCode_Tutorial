@@ -13,7 +13,7 @@ So, here's it: Take any piece of code, open it in your preferred browser, and re
 
 And, please, question everything! Don't trust my code and/or comments. 
 
-Why this collection?
+###Why this collection?
 ===================
 
 This set of code examples is a result of two days of coding at home. I wanted to deliver a few examples of Angular's features 
@@ -21,7 +21,7 @@ to make the internal evaluations in my company [ ![Advarics ](http://t58.imgup.n
 more realistic.
 
 
-Warning
+###Warning
 =======
 
 But, beware: I'm not an Angular.js developer. I prefer Backbone.js / Marionette.js. 
@@ -31,7 +31,7 @@ I hope these examples will be of some value for you, dear visitor.
 
 If you find any error in code/comments, please, let me know. I'm sure there'll be many of them.
 
-Recommendations
+###Recommendations
 ===============
 
 I'd recommend this eBook to learn Angular.js thoroughly: [Web Component Architecture & Development with AngularJS](https://leanpub.com/web-component-development-with-angularjs) by David Shapiro 
@@ -40,7 +40,7 @@ Also a very good and densely packed tutorial about Angular.js: [Todd Motto's Ult
 
 Regarding coding guidelines I recommend [John Papa's Style Guide](https://github.com/johnpapa/angularjs-styleguide).
 
-License
+####License
 =======
 
 MIT
