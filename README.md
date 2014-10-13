@@ -16,7 +16,7 @@ The whole bunch is just a result of two days of coding. I wanted to deliver a fe
 to make internal evaluations in my company a little bit more realistic.
 
 But, beware: I'm not an Angular.js developer. I prefer Backbone.js / Marionette.js. 
-Nevertheless, there's no reason to reject any kind of knowledge. You may never know ;) 
+Nevertheless, there's no reason to reject any kind of knowledge. You never know ;) 
 
 I hope these examples will be of some value for you, dear visitor.
 
