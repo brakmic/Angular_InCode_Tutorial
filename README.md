@@ -17,7 +17,7 @@ Why this collection?
 ===================
 
 This set of code examples is a result of two days of coding at home. I wanted to deliver a few examples of Angular's features 
-to make the internal evaluations in my company [ ![Advarics ](http://p21.imgup.net/advarics_l61d9.png "Advarics GmbH") ](http://www.advarics.net "Advarics GmbH") 
+to make the internal evaluations in my company [ ![Advarics ](http://t58.imgup.net/advarics_le9f7.png "Advarics GmbH") ](http://www.advarics.net "Advarics GmbH") 
 more realistic.
 
 
