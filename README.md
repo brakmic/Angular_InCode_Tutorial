@@ -6,7 +6,7 @@ No switching between lengthy docs and examples.
 
 There are many excellent books & tutorials, of course. 
 
-But sometimes I just want to take an unknown piece of code, read some initial 
+But sometimes we just want to take an unknown piece of code, read some initial 
 info perhaps,...and simply run it to receive a meaningful result. 
 
 So, here's it: Take any piece of code, open it in your preferred browser, and read the comments. 
