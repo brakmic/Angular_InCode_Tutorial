@@ -100,7 +100,7 @@
             ].join(''),
             link: linker,
             scope: true,
-            transclude: true //we activate transclusion, that is: we keep access to any elements/properties from our parent elements
+            transclude: true //we activate transclusion, that is: we keep access to our parent elements & their properties
         }
     }
 
