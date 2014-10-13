@@ -1,7 +1,7 @@
 #Angular In-Code Tutorial
 
-Learn Angular.js by reading code and comments! 
-No switching between lengthy docs and examples.
+**Learn Angular.js by reading code and comments!** 
+*No switching between lengthy docs and code examples.*
 
 There are many excellent books & tutorials, of course. 
 
@@ -10,7 +10,7 @@ info perhaps,...and simply run it to receive a meaningful result.
 
 So, here's it: Take any piece of code, open it in your preferred browser, and read the comments. 
 
-And, please, question everything! Don't trust my code and/or comments. 
+*And, please, question everything! Don't trust my code and/or comments.* 
 
 ###Why this collection?
 
