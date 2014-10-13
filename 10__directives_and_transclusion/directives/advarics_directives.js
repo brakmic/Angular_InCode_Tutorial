@@ -79,8 +79,9 @@
     // <div ng-bind="{{ vm.value2 }}"></div>
     // <div ng-bind="{{ vm.value3 }}"></div>
     //
-    // <inner-element ng-transclude></inner-element> <<--- THIS element will have access to outer-element's controller and
-    //                                                      its properties (value1, value2 etc.) during the HTML-compilation
+    // <inner-element ng-transclude></inner-element> <<--- THIS element will have access to outer-element's controller,
+    //                                                      elements markup and all available properties (value1, value2 etc.)
+    //                                                      during the HTML-compilation
     // </outer-element>
     function RotateTansclude(){
         var linker = function($scope, $element, $attrs){
