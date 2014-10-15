@@ -1,9 +1,8 @@
 (function(){
     "use strict";
 
-    var app = angular.module('advaricsModule');
-
-    app.controller('ControllerAsCtrl', ControllerAsCtrl);
+    angular.module('advaricsModule', [])
+        .controller('ControllerAsCtrl', ControllerAsCtrl);
 
     //we create a controller via the new "controllerAs" syntax
     function ControllerAsCtrl(){
