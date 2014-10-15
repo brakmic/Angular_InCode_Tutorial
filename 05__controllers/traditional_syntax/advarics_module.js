@@ -1,7 +1,8 @@
 (function(){
     "use strict";
-    angular.module('advaricsModule',[])
-    .controller('TraditionalCtrl', TraditionalCtrl);
+    var app = angular.module('advaricsModule');
+
+    app.controller('TraditionalCtrl', TraditionalCtrl);
 
     //this is the traditional way of inserting a controller in HTML
     //now we have to use the automatically injected $scope object to propagate our variables, objects & methods
