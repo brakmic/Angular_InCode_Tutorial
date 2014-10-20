@@ -2,7 +2,7 @@
     "use strict";
 
     angular.module('advarics.Directives', [])
-    .directive('advMoveRight', MoveRight)    //zwei Direktiven einbinden
+    .directive('advMoveRight', MoveRight)    //declare two directives at once
     .directive('advRotateTransclude', RotateTansclude)
     .directive('advSendEmail', EmailForm);
 
@@ -54,7 +54,7 @@
                             //should be loaded from the server and will fire a GET-request
                     '<div style="position: relative; width: 50px; height: 50px;" class="advarics-thumbnail">',
                     '<a href="#" class="thumbnail">',
-                    '<img src="styles/images/advarics-cart.png" alt="advarics-cart" />',
+                    '<img src="../styles/images/advarics-cart.png" alt="advarics-cart" />',
                     '</a>',
                     '</div>'
             ].join(''),
