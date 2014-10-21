@@ -17,17 +17,17 @@
       $routeProvider.
         when('/',
         {
-            templateUrl: 'views/rest.html',
+            templateUrl: '10__directives_and_transclusion/views/rest.html',
             controller: 'MainCtrl',
             controllerAs: 'vm'
         }).
         when('/table', {
-            templateUrl: 'views/table.html',
+          templateUrl: '10__directives_and_transclusion/views/table.html',
             controller: 'MainCtrl',
             controllerAs: 'vm'
         }).
         when('/directives', {
-              templateUrl: 'views/directives.html',
+          templateUrl: '10__directives_and_transclusion/views/directives.html',
               controller: 'DirectivesCtrl',
               controllerAs: 'vm'
         }).

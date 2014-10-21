@@ -21,12 +21,12 @@
       $routeProvider.
         when('/',
         {
-            templateUrl: 'views/rest.html',
+            templateUrl: '09__views_and_routing/views/rest.html',
             controller: 'MainCtrl',
             controllerAs: 'vm'  //bind the controller context to this variable
         }).
         when('/table', {
-            templateUrl: 'views/table.html',
+          templateUrl: '09__views_and_routing/views/table.html',
             controller: 'MainCtrl',
             controllerAs: 'vm'
         }).
